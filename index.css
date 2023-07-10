@@ -95,7 +95,7 @@ nav a{
 
 .second-section img{
     width: 100%;
-    height: 100%;
+   height: auto;
 }
 .slider{
     transform: translateX(-100%);
