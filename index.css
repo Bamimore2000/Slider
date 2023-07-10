@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+a, li{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.center{
+    text-align: center;
+}
+nav{
+    background-color: black;
+    width: 100%;
+}
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a, nav i{
+    color: white;
+}
+ul{
+    display: flex;
+    gap: 16px;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+}
+nav i{
+    font-size: 40px;
+}
+.hamburger{
+    display: none;
+}
+nav a{
+    font-size: 21px;
+    text-transform: capitalize;
+}
+.main-section{
+    width: 100%;
+    height: 90%;
+    display: grid;
+    place-items: center;
+    background-image: url(images/img-10.png);
+    background-size: cover;
+    background-position: center;
+}
+.center h1{
+    font-size: 40px;
+    color: white;
+    
+}
+.center button{
+    background-color: rgb(233, 8, 8);
+    color: white;
+    padding: 18px 40px;
+    font-size: 30px;
+    border: none;
+    border-radius: ;
+    cursor: pointer;
+    transition: 300ms all ease;
+}
+.center button:hover{
+    background-color: red;
+}
+.second-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2%;
+    margin-top: 10px;
+}
+
+.second-section img{
+    width: 100%;
+    height: 100%;
+}
+.slider{
+    transform: translateX(-100%);
+    opacity: .3;
+    transition: all 1200ms ease-in-out;
+}
+
+.slider:hover{
+    box-shadow: 2px 5px 10px black;
+}
+.slider:nth-child(odd){
+    transform: translateX(100%);
+}
+.fixed.slider{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px){
+    .second-section{  
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    ul{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .bi-x{
+        display: none;
+    }
+}
+@media screen and (max-width: 480px){
+    .second-section{  
+        grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
